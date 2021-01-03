@@ -26,9 +26,7 @@ function [esTSNR,esHRNR]=WienerNoiseReduction(ns,fs,IS)
 % Output Parameters : enhanced speech  
 %   esTSNR      enhanced speech with the Two-Step Noise Reduction method 
 %   esHNRN      enhanced speech with the Harmonic Regeneration Noise Reduction method
-%             
-%Author :       LIU Ming, 2008
-%Modified :     SCALART Pascal october, 2008
+%   
 %
 %
 %% ------- input noisy speech  --------
@@ -172,9 +170,7 @@ function        NewGain=gaincontrol(Gain,ConstraintInLength)
 %       the following choice : the time-duration of g(n) is limited to
 %       L2=NFFT/2=L1 (see lines 88 and 192)
 %
-%Author : SCALART Pascal
 %
-%October  2008
 %
 meanGain=mean(Gain.^2);
 NFFT=length(Gain);
